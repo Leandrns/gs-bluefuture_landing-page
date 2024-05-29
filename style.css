@@ -15,7 +15,7 @@
 
 body {
     background-image: url(images/background_blue-particles.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
 }
 
@@ -274,13 +274,13 @@ div#footer_news{
     font-weight: 100;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     #footer_content {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 633px) {
     #footer_content {
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
