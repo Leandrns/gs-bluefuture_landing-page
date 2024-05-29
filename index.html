@@ -62,18 +62,17 @@
     </section>
     
     <section class="secao2">
-        <div class="wrapper">
-            <div class="wrapper-holder"></div>
-                <div id="slider-img-1"></div>
-                <div id="slider-img-2"></div>
-                <div id="slider-img-3"></div>
-            </div>
-        <div class="button-holder">
-            <a href="#slider-img-1" class="button"></a>
-            <a href="#slider-img-2" class="button"></a>
-            <a href="#slider-img-3" class="button"></a>
+        <h2>Seção 2</h2>
+        <div class="slide">
+            <div id="item-1" class="carrosel-item item-1"></div>
+            <div id="item-2" class="carrosel-item item-2"></div>
+            <div id="item-3" class="carrosel-item item-3"></div>
+
+            <a href="#item-1" class="prev arrow"></a>
+            <a href="#item-2" class="next arrow"></a>
         </div>
     </section>
+
     
     <section class="secao3">
         <div class="container">
@@ -127,7 +126,28 @@
                 : 'fa-solid fa-bars'
         }
 
-        
+        let currentIndex = 0;
+        const items = document.querySelectorAll('.carrosel-item');
+        const totalItems = items.length;
+
+        function showSlide(index) {
+            items.forEach((item, i) => {
+                item.style.opacity = i === index ? '1' : '0';
+            });
+        }
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
+            showSlide(currentIndex);
+        });
+
+        document.querySelector('.next').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalItems;
+            showSlide(currentIndex);
+        });
+
+    
+        showSlide(currentIndex);
     </script>
 </body>
 
