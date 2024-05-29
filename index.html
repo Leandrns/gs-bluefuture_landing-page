@@ -45,9 +45,73 @@
         </div>
     </header>
 
-    <section></section>
-    <section></section>
-    <section></section>
+    <section class="secao1" id="secao1">
+        <div class="container">
+            <div class="texto">
+                <h3 class="titulo_secao">O que vamos resolver?</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus officiis, similique explicabo obcaecati dolore at iste nostrum minus necessitatibus aliquam?</p>
+
+                <button class="saiba_mais"><a href="#">Saiba mais</a></button>
+            </div>
+            <div class="imagem_secao">
+                <img src="images/img_secao1.jpg" alt="imagemgolfinho">
+            </div>
+        </div>
+    </section>
+    
+    <section class="secao2" id="secao2">
+        <h2>Seção 2</h2>
+        <div class="conteudo">
+        <div class="slide">
+            <div id="item-1" class="carrosel-item item-1"></div>
+            <div id="item-2" class="carrosel-item item-2"></div>
+            <div id="item-3" class="carrosel-item item-3"></div>
+
+            <a href="#item-1" class="prev arrow"></a>
+            <a href="#item-2" class="next arrow"></a>
+        </div>
+        <div class="texto_2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cumque culpa, harum voluptatibus quam reprehenderit libero perspiciatis sint repellat? Error!</p>
+        </div>
+    </div>
+    </section>
+
+    
+    <section class="secao3" id="secao3">
+        <div class="container">
+            <h2>Seção 3</h2><br>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam deleniti nisi praesentium possimus consectetur consequuntur eum dicta cumque reprehenderit eligendi.</h4>
+            <div class="cards">
+                <div class="card-item">
+                    <img src="images/img_box.jpg" alt="imagem">
+                    <p class="titulo_card">Lorem ipsum</p>
+                    <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto exercitationem perspiciatis odit accusantium voluptate?</p>
+                </div>
+                <div class="card-item">
+                    <img src="images/img_box.jpg" alt="imagem">
+                    <p class="titulo_card">Lorem ipsum</p>
+                    <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto exercitationem perspiciatis odit accusantium voluptate?</p>
+                </div>
+                <div class="card-item">
+                    <img src="images/img_box.jpg" alt="imagem">
+                    <p class="titulo_card">Lorem ipsum</p>
+                    <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto exercitationem perspiciatis odit accusantium voluptate?</p>
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+
+            <div class="manual-navigation">
+                <label  for="radio1" class="manual-btn"></label>
+                <label  for="radio2" class="manual-btn"></label>
+                <label  for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
+    
     <section></section>
     <section></section>
     <section></section>
@@ -77,13 +141,13 @@
                     <h3>Menu</h3>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Inicio</a>
+                    <a href="#secao1" class="footer-link">Seção 1</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Meio</a>
+                    <a href="#secao2" class="footer-link">Seção 2</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Fim</a>
+                    <a href="#secao3" class="footer-link">Seção 3</a>
                 </li>
             </ul>
             <ul class="footer-list">
@@ -105,12 +169,12 @@
                 <li>
                     <a href="#" class="footer-link">Cátedra UNESCO para a Sustentabilidade do Oceano</a>
                 </li>
-
+                
                 <li>
                     <a href="#" class="footer-link">Pacto Global Rede Brasil</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Select Soluções</a>
+                    <a href="#" class="footer-link">select soluções</a>
                 </li>
             </ul>
             <div id="footer_news">
@@ -131,9 +195,6 @@
         </div>
     </footer>
 
-
-
-
     <script>
         const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
@@ -147,6 +208,29 @@
                 ? 'fa-solid fa-xmark'
                 : 'fa-solid fa-bars'
         }
+
+        let currentIndex = 0;
+        const items = document.querySelectorAll('.carrosel-item');
+        const totalItems = items.length;
+
+        function showSlide(index) {
+            items.forEach((item, i) => {
+                item.style.opacity = i === index ? '1' : '0';
+            });
+        }
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
+            showSlide(currentIndex);
+        });
+
+        document.querySelector('.next').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalItems;
+            showSlide(currentIndex);
+        });
+
+    
+        showSlide(currentIndex);
     </script>
 </body>
 
