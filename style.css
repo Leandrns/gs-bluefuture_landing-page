@@ -146,3 +146,112 @@ nav .toggle_btn {
         width: unset;
     }
 }
+
+/*Sections*/
+section{
+    padding: 40px 0;
+}
+
+.titulo_secao{
+    font-size: 50px;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.secao1 .container{
+    display: flex;
+    align-items: center;
+}
+
+.secao1 .texto{
+    width: 50%;
+    padding: 0 40px;
+}
+
+.secao1 .texto h3{
+    font-size: 48px;
+    color: #fff;
+}
+
+.secao1 .texto p{
+    margin: 5px 0 10px 0;
+    color: #fff;
+}
+.secao1 .imagem_secao{
+    width: 50%;
+}
+
+.secao1 .imagem_secao img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.saiba_mais{
+    background-color:midnightblue;
+    width: 90px;
+    height: 30px;
+    border-radius: 30px;
+    display: flex;
+}
+
+.secao3 h4{
+    text-align: center;
+    color:#fff;
+}
+
+.secao3  h2{
+    font-size: 44px;
+    text-align: center;
+    color:#fff;
+}
+
+.secao3 p{
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+    border-radius: 10px;
+}
+
+.secao3 .card-item{
+    background-color: #b9b9b97e;
+    margin: 15px;
+    border-radius: 15px;
+    text-align: center;
+    width: 250px;
+}
+
+.secao3 .card-item img{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 10px auto;
+}
+
+.secao3 .card-item .titulo_card{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.secao3 .card-item .descricao{
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+.secao3 .card-item:hover{
+    background-color: #1877F2;
+    margin: -2px;
+
+}
