@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans';
+    font-family: sans-serif;
 }
 
 body {
@@ -42,6 +42,11 @@ nav {
     justify-content: space-between;
 }
 
+nav .logo {
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.514);
+    border-radius: 8px;
+}
 nav .sections {
     display: flex;
     gap: 2.5rem;
