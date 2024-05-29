@@ -8,6 +8,11 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
     <title>Landing Page</title>
 </head>
 
@@ -16,27 +21,29 @@
     </nav>
     <header>
         <nav>
-            <div class="logo"><a href="#"><img src="images/logo_bluefuture.svg" alt="Logo BlueFuture" width="200px"></a></div>
+            <div class="logo"><a href="#"><img src="images/logo_bluefuture.svg" alt="Logo BlueFuture" width="200px"></a>
+            </div>
             <ul class="sections">
-                <li><a href="">Seção 1</a></li>
-                <li><a href="">Seção 2</a></li>
-                <li><a href="">Seção 3</a></li>
-                <li><a href="">Seção 4</a></li>
-                <li><a href="">Seção 5</a></li>
-                <li><a href="">Seção 6</a></li>
+                <li><a class="item_section" href="">Seção 1</a></li>
+                <li><a class="item_section" href="">Seção 2</a></li>
+                <li><a class="item_section" href="">Seção 3</a></li>
+                <li><a class="item_section" href="">Seção 4</a></li>
+                <li><a class="item_section" href="">Seção 5</a></li>
+                <li><a class="item_section" href="">Seção 6</a></li>
             </ul>
-            <a href="#" class="action_btn">Começar</a>
+            <a href="#" class="action_btn">Salve os Oceanos</a>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
         <div class="menu_dropdown">
-            <li><a href="">Seção 1</a></li>
-            <li><a href="">Seção 2</a></li>
-            <li><a href="">Seção 3</a></li>
-            <li><a href="">Seção 4</a></li>
-            <li><a href="">Seção 5</a></li>
-            <li><a href="">Seção 6</a></li>
+            <li><a class="item_section" href="">Seção 1</a></li>
+            <li><a class="item_section" href="">Seção 2</a></li>
+            <li><a class="item_section" href="">Seção 3</a></li>
+            <li><a class="item_section" href="">Seção 4</a></li>
+            <li><a class="item_section" href="">Seção 5</a></li>
+            <li><a class="item_section" href="">Seção 6</a></li>
+            <a href="#" class="action_btn">Salve os Oceanos</a>
         </div>
     </header>
 
@@ -103,87 +110,9 @@
     <section></section>
     <section></section>
     <section></section>
-
-    <footer>
-        <div id="footer_content">
-            <div id="footer_contacts">
-                <h1>Logo</h1>
-                <p>Preservando os oceanos por meio da tecnologia</p>
-
-                <div id="footer_social_media">
-                    <a href="#" class="footer-link" id="instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="#" class="footer-link" id="facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-
-                    <a href="#" class="footer-link" id="youtube">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-
-            <ul class="footer-list">
-                <li>
-                    <h3>Patrocinadores</h3>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">FIAP</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">REDE OCEANO LIMPO</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">020 OCEANS</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Softtek</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Cátedra UNESCO para a Sustentabilidade do Oceano</a>
-                </li>
-                
-                <li>
-                    <a href="#" class="footer-link">Pacto Global Rede Brasil</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">select soluções</a>
-                </li>
-            </ul>
-            <ul class="footer-list">
-                <li>
-                    <h3>Menu</h3>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Inicio</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Meio</a>
-                </li>
-                <li>
-                    <a href="#" class="footer-link">Fim</a>
-                </li>
-            </ul>
-            <div id="footer_news">
-                <h3>Novidades</h3>
-                <p>Insira o seu email para saber como podemos transformar o mundo em um lugar melhor.</p>
-
-                <div id="input_group">
-                    <input type="email" id="email">
-                    <button>
-                        <i class="fa-regular fa-envelope"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div id="footer_copyright">
-            &#169
-            2024 all rights reserved
-        </div>
-    </footer>
-
+    <section></section>
+    <section></section>
+    <section></section>
     <script>
         const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
@@ -192,10 +121,10 @@
         toggleBtn.onclick = function () {
             menuDropDown.classList.toggle('open')
 
-        const isOpen = menuDropDown.classList.contains('open')
-        toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
+            const isOpen = menuDropDown.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
         }
     </script>
 </body>
