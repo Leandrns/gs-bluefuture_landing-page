@@ -10,34 +10,38 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
     <title>Landing Page</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="logo"><a href="#"><img src="images/logo_bluefuture.svg" alt="Logo BlueFuture" width="200px"></a></div>
+            <div class="logo"><a href="#"><img src="images/logo_bluefuture.svg" alt="Logo BlueFuture" width="200px"></a>
+            </div>
             <ul class="sections">
-                <li><a class="menu" href="">Seção 1</a></li>
-                <li><a class="menu" href="">Seção 2</a></li>
-                <li><a class="menu" href="">Seção 3</a></li>
-                <li><a class="menu" href="">Seção 4</a></li>
-                <li><a class="menu"href="">Seção 5</a></li>
-                <li><a class="menu" href="">Seção 6</a></li>
+                <li><a class="item_section" href="">Seção 1</a></li>
+                <li><a class="item_section" href="">Seção 2</a></li>
+                <li><a class="item_section" href="">Seção 3</a></li>
+                <li><a class="item_section" href="">Seção 4</a></li>
+                <li><a class="item_section" href="">Seção 5</a></li>
+                <li><a class="item_section" href="">Seção 6</a></li>
             </ul>
-            <a href="#" class="action_btn">Começar</a>
+            <a href="#" class="action_btn">Salve os Oceanos</a>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
         <div class="menu_dropdown">
-            <li><a href="">Seção 1</a></li>
-            <li><a href="">Seção 2</a></li>
-            <li><a href="">Seção 3</a></li>
-            <li><a href="">Seção 4</a></li>
-            <li><a href="">Seção 5</a></li>
-            <li><a href="">Seção 6</a></li>
+            <li><a class="item_section" href="">Seção 1</a></li>
+            <li><a class="item_section" href="">Seção 2</a></li>
+            <li><a class="item_section" href="">Seção 3</a></li>
+            <li><a class="item_section" href="">Seção 4</a></li>
+            <li><a class="item_section" href="">Seção 5</a></li>
+            <li><a class="item_section" href="">Seção 6</a></li>
+            <a href="#" class="action_btn">Salve os Oceanos</a>
         </div>
     </header>
 
@@ -47,7 +51,7 @@
     <section></section>
     <section></section>
     <section></section>
-    
+
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
@@ -101,12 +105,12 @@
                 <li>
                     <a href="#" class="footer-link">Cátedra UNESCO para a Sustentabilidade do Oceano</a>
                 </li>
-                
+
                 <li>
                     <a href="#" class="footer-link">Pacto Global Rede Brasil</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">select soluções</a>
+                    <a href="#" class="footer-link">Select Soluções</a>
                 </li>
             </ul>
             <div id="footer_news">
@@ -138,10 +142,10 @@
         toggleBtn.onclick = function () {
             menuDropDown.classList.toggle('open')
 
-        const isOpen = menuDropDown.classList.contains('open')
-        toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
+            const isOpen = menuDropDown.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
         }
     </script>
 </body>
