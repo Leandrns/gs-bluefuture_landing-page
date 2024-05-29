@@ -23,7 +23,7 @@ li {
     list-style: none;
 }
 
-a {
+.menu {
     text-decoration: none;
     color: #fff;
     padding: 8px;
@@ -120,10 +120,19 @@ nav .toggle_btn {
 footer {
     width: 100%;
     color: var(--cor-neutra-40-);
+    font-family: "DM Sans";
 }
 
 .footer-link{
     text-decoration: none;
+}
+
+ul.footer-list{
+    padding: 15px;
+}
+
+div#footer_news{
+    padding: 15px;
 }
 
 #footer_content{
@@ -135,6 +144,7 @@ footer {
 
 #footer_contacts{
     margin-bottom: 0.75rem;
+    font-size: 20px;
 }
 
 #footer_social_media{
