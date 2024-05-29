@@ -29,7 +29,7 @@ a {
 
 header {
     position: sticky;
-    padding: 1rem 2rem;
+    padding: 1rem;
 }
 
 nav {
@@ -65,7 +65,7 @@ nav .toggle_btn {
     backdrop-filter: blur(15px);
     border-radius: 8px;
     overflow: hidden;
-    transition: all .2s ease;
+    transition: all .4s ease;
 }
 
 .menu_dropdown.open {
