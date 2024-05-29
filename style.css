@@ -63,6 +63,7 @@ header {
     top: 0;
     padding: 1.5rem 2rem;
     box-shadow: 0 0 18px 0 black;
+    z-index: 1000;
 }
 
 nav {
@@ -148,6 +149,8 @@ nav .toggle_btn {
 }
 
 /*Sections*/
+
+/*Section1*/
 section{
     padding: 40px 0;
 }
@@ -190,12 +193,12 @@ section{
 
 .saiba_mais{
     background-color:midnightblue;
-    width: 90px;
-    height: 30px;
+    width: 100px;
+    height: 40px;
     border-radius: 30px;
-    display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px 0 10px 0;
 }
 
 .saiba_mais a{
@@ -233,29 +236,35 @@ section{
         font-size: 14px;
     }    
 
-    .saiba_mais{
-        width: 70px;
-        height: 25px;
-    }
+    
 }
 
+/*Section2*/
 .secao2{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    z-index: 1;
 }
 
-.secao2, h2{
+.secao2 h2{
     font-size: 40px;
     margin: 20px;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .slide {
     width: 400px;
     height: 400px;
     position: relative;
-    border: solid 5px black;
+    border: solid 2px black;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -315,7 +324,33 @@ section{
     background-image: url("images/img_slide3.jpg");
 }
 
+.texto_2{
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
 
+@media (max-width:768px){
+    .conteudo{
+        flex-direction: column;
+    }
+
+    .slide, .texto_2{
+        padding: 20px;
+    }
+
+    .slide{
+        margin-bottom: 20px;
+    }
+
+    .texto_2{
+        text-align: center;
+        padding: 0 20px;
+    }
+}
+
+/*Section3*/
 .secao3 h4{
     text-align: center;
     color:#fff;
