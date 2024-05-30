@@ -74,7 +74,10 @@ nav {
 
 nav .logo {
     padding: 8px;
+}
 
+nav .logo_seaconnection {
+    padding: 5px;
 }
 
 nav .sections {
@@ -436,11 +439,11 @@ footer {
 }
 
 ul.footer-list {
-    padding: 15px;
+    padding: 15px 50px 15px 50px;
 }
 
 div#footer_news {
-    padding: 15px;
+    padding: 15px 50px 15px 50px;
 }
 
 #footer_content {
