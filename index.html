@@ -49,7 +49,8 @@
         <div class="container">
             <div class="texto">
                 <h3 class="titulo_secao">O que vamos resolver?</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus officiis, similique explicabo obcaecati dolore at iste nostrum minus necessitatibus aliquam?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus officiis, similique explicabo
+                    obcaecati dolore at iste nostrum minus necessitatibus aliquam?</p>
 
                 <button class="saiba_mais"><a href="#">Saiba mais</a></button>
             </div>
@@ -58,60 +59,54 @@
             </div>
         </div>
     </section>
-    
+
     <section class="secao2" id="secao2">
         <h2>Seção 2</h2>
         <div class="conteudo">
-        <div class="slide">
-            <div id="item-1" class="carrosel-item item-1"></div>
-            <div id="item-2" class="carrosel-item item-2"></div>
-            <div id="item-3" class="carrosel-item item-3"></div>
+            <div class="slide">
+                <div id="item-1" class="carrosel-item item-1"></div>
+                <div id="item-2" class="carrosel-item item-2"></div>
+                <div id="item-3" class="carrosel-item item-3"></div>
 
-            <a href="#item-1" class="prev arrow"></a>
-            <a href="#item-2" class="next arrow"></a>
+                <a class="prev arrow"></a>
+                <a class="next arrow"></a>
+            </div>
+            <div class="texto_2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cumque culpa, harum voluptatibus
+                    quam reprehenderit libero perspiciatis sint repellat? Error!</p>
+            </div>
         </div>
-        <div class="texto_2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cumque culpa, harum voluptatibus quam reprehenderit libero perspiciatis sint repellat? Error!</p>
-        </div>
-    </div>
     </section>
 
-    
+
     <section class="secao3" id="secao3">
         <div class="container">
             <h2>Seção 3</h2><br>
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam deleniti nisi praesentium possimus consectetur consequuntur eum dicta cumque reprehenderit eligendi.</h4>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam deleniti nisi praesentium possimus
+                consectetur consequuntur eum dicta cumque reprehenderit eligendi.</h4>
             <div class="cards">
                 <div class="card-item">
                     <img src="images/img_box.jpg" alt="imagem">
                     <p class="titulo_card">Lorem ipsum</p>
-                    <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto exercitationem perspiciatis odit accusantium voluptate?</p>
+                    <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                        exercitationem perspiciatis odit accusantium voluptate?</p>
                 </div>
                 <div class="card-item">
                     <img src="images/img_box.jpg" alt="imagem">
                     <p class="titulo_card">Lorem ipsum</p>
-                    <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto exercitationem perspiciatis odit accusantium voluptate?</p>
+                    <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                        exercitationem perspiciatis odit accusantium voluptate?</p>
                 </div>
                 <div class="card-item">
                     <img src="images/img_box.jpg" alt="imagem">
                     <p class="titulo_card">Lorem ipsum</p>
-                    <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto exercitationem perspiciatis odit accusantium voluptate?</p>
+                    <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                        exercitationem perspiciatis odit accusantium voluptate?</p>
                 </div>
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                </div>
-            </div>
-
-            <div class="manual-navigation">
-                <label  for="radio1" class="manual-btn"></label>
-                <label  for="radio2" class="manual-btn"></label>
-                <label  for="radio3" class="manual-btn"></label>
             </div>
         </div>
     </section>
-    
+
     <section></section>
     <section></section>
     <section></section>
@@ -169,7 +164,7 @@
                 <li>
                     <a href="#" class="footer-link">Cátedra UNESCO para a Sustentabilidade do Oceano</a>
                 </li>
-                
+
                 <li>
                     <a href="#" class="footer-link">Pacto Global Rede Brasil</a>
                 </li>
@@ -196,6 +191,7 @@
     </footer>
 
     <script>
+        // MENU DROPDOWN
         const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
         const menuDropDown = document.querySelector('.menu_dropdown')
@@ -204,11 +200,10 @@
             menuDropDown.classList.toggle('open')
 
             const isOpen = menuDropDown.classList.contains('open')
-            toggleBtnIcon.classList = isOpen
-                ? 'fa-solid fa-xmark'
-                : 'fa-solid fa-bars'
+            toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
         }
 
+        // CARROSSEL DE IMAGENS
         let currentIndex = 0;
         const items = document.querySelectorAll('.carrosel-item');
         const totalItems = items.length;
@@ -229,7 +224,6 @@
             showSlide(currentIndex);
         });
 
-    
         showSlide(currentIndex);
     </script>
 </body>
