@@ -390,11 +390,6 @@ section {
     text-align: center;
 }
 
-.secao3 p {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
 .cards {
     display: flex;
     justify-content: center;
@@ -405,10 +400,11 @@ section {
 
 .secao3 .card-item {
     background-color: #b9b9b97e;
-    margin: 15px;
+    margin: 50px;
     border-radius: 15px;
     text-align: center;
-    width: 250px;
+    width: 320px;
+    padding: 20px 5px 20px 10px;
     transition: all .3s;
 }
 
@@ -422,12 +418,12 @@ section {
 
 .secao3 .card-item .titulo_card {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 15px;
 }
 
 .secao3 .card-item .descricao {
-    font-size: 15px;
+    font-size: 20px;
     padding: 0 15px;
 }
 
@@ -528,8 +524,9 @@ section {
 .conteudo6 {
     display: flex;
     justify-content: center;
-    margin-top: 40px; 
+    margin-top: 40px;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .conteudo-wrapper {
@@ -545,7 +542,7 @@ section {
 }
 
 .foto_praia img {
-    width: 80%;
+    width: 90%;
     border-radius: 10px;
     box-shadow: 0 0 30px 0 #000;
 }
@@ -555,14 +552,16 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center; 
+    justify-content: center;
     border-radius: 10px;
     color: white;
+    margin-left: 40px;
     margin-top: 20px;
 }
 
 .cards6 .card-item6 {
     background-color: #b9b9b97e;
-    margin: 15px 0;
+    margin: 15px 0 0 15px;
     border-radius: 15px;
     border: #000f3b solid 2px;
     text-align: center;
@@ -587,19 +586,22 @@ section {
         align-items: center;
     }
 
-    .foto_praia,
-    .cards6 {
-        width: 90%; 
+    .secao6 h2 {
+        font-size: 8vw;
     }
 
     .cards6 {
-        margin-top: 10px; 
+        margin-left: 0;
+        width: 90%;
     }
-}
 
-@media (min-width: 769px) {
-    .cards6 {
-        justify-content: center; 
+    .cards6 .card-item6 {
+        width: 100%;
+    }
+
+    .foto_praia img {
+        width: 100%;
+        margin-top: 25px;
     }
 }
 
