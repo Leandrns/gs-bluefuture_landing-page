@@ -406,8 +406,8 @@ section {
 
 .secao3 .card-item img {
     border-radius: 10%;
-    border: #028eb1 solid 2px;
-    width: 100%px;
+    border: hsl(192, 98%, 35%) solid 2px;
+    width: 180px;
     height: 150px;
     display: block;
     margin: 10px auto;
