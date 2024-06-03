@@ -267,7 +267,7 @@
 
         //Transição dos links do footer e do menu para as sections
         document.addEventListener("DOMContentLoaded", function() {
-            const menuItems = document.querySelectorAll('.item_section');
+            const menuLinks = document.querySelectorAll('.item_section');
             const footerLinks = document.querySelectorAll('.footer-link');
 
             const scrollToSection = function(event, targetId) {
@@ -280,7 +280,7 @@
                 }
             };
 
-            menuItems.forEach(function(item) {
+            menuLinks.forEach(function(item) {
                 item.addEventListener('click', function(event) {
                     const targetId = this.getAttribute('href');
                     scrollToSection(event, targetId);
