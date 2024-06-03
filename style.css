@@ -40,10 +40,10 @@ li {
     text-decoration: none;
     color: #fff;
     padding: 10px;
-    background-color: #028eb1;
+    background-color: #0262b1;
     border-radius: 15px;
     transition: all .2s;
-    border: solid 2px #028eb1;
+    border: solid 2px #0262b1;
 }
 
 .action_btn:hover {
@@ -80,10 +80,7 @@ nav .logo {
 
 nav .logo .logosea {
     margin-right: 50px;
-}
-
-nav .logo_seaconnection {
-    padding: 5px;
+    padding: 8px;
 }
 
 nav .sections {
@@ -153,9 +150,9 @@ nav .toggle_btn {
     }
 }
 
-/*Sections*/
+/* SECTIONS */
 
-/*Section1*/
+/* Section1 */
 section {
     padding: 40px 0;
 }
@@ -241,8 +238,9 @@ section {
     }
 }
 
-/*Section2*/
+/* Section2 */
 .secao2 {
+    background-color: #0262b1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -252,7 +250,7 @@ section {
 
 .secao2 h2 {
     font-size: 4vw;
-    margin: 20px;
+    margin: 0 20px 20px 20px;
 }
 
 .conteudo {
@@ -361,7 +359,7 @@ section {
     }
 }
 
-/*Section3*/
+/* Section3 */
 .secao3 h4 {
     text-align: center;
     font-size: 2.8vw;
@@ -370,14 +368,11 @@ section {
 .secao3 h2 {
     font-size: 4vw;
     text-align: center;
-    color: #fff;
 }
 
 .secao3 p {
     margin-bottom: 20px;
     text-align: center;
-    color: #fff;
-
 }
 
 .cards {
@@ -431,6 +426,69 @@ section {
         font-size: 4vw;
     }
 }
+
+/* Section4 */
+.secao4 {
+    background-color: #0262b1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.secao4 h2 {
+    font-size: 4vw;
+    text-align: center;
+}
+
+.secao4 .texto4 {
+    font-size: 2.8vw;
+    width: 80%;
+}
+
+.secao4 .conteudo4 {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grafico_map img {
+    width: 60%;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 0 0 15px 0 #000;
+}
+
+.grafico_map .fonte {
+    font-size: 15px;
+}
+
+@media(max-width:768px) {
+    .secao4 .conteudo4 {
+        flex-direction: column;
+    }
+
+    .grafico_map img {
+        width: 55%;
+        margin-top: 25px;
+    }
+
+    .secao4 h2 {
+        font-size: 8vw;
+    }
+    
+    .secao4 .texto4 {
+        font-size: 4vw;
+    }
+}
+
+/* Section5 */
+
+
+/* Section6 */
+
 
 /* FOOTER */
 footer {
