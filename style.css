@@ -524,6 +524,10 @@ section {
     color: white;
 }
 
+.secao6 .titulo_card6{
+    font-size: 4vh;
+}
+
 .secao6 .texto6{
     font-size: 1.5vw;
 }
@@ -595,6 +599,13 @@ section {
 
     .secao6 h2 {
         font-size: 8vw;
+    }
+    .secao6 .texto6{
+        font-size: 3vw;
+    }
+
+    .secao6 .titulo_card6{
+        font-size: 4vw;
     }
 
     .cards6 {
