@@ -22,7 +22,6 @@
             <div class="logo">
                 <a href=""><img src="images/logo_seaconnect.svg" alt="Logo SeaConnection"></a>
             </div>
-            <div class="logosea"></div>
             <ul class="sections">
                 <li><a class="item_section" href="">Seção 1</a></li>
                 <li><a class="item_section" href="">Seção 2</a></li>
@@ -110,7 +109,28 @@
     </section>
 
     <section></section>
-    <section></section>
+    <h2 class="titulo">Quais os benefícios?</h2>
+    <h4 class="subtitulo">Passe o mouse ou clique na imagem!</h4>
+    <section class="secao5">
+        <div class="box">
+            <div onmouseover="aparecerTexto();" onmouseout="reset();" id="divum"></div>
+        </div>
+        <div class="box">
+            <div onmouseover="aparecerTexto();" onmouseout="reset();" id="divdois"></div>
+        </div>
+        <div class="box">
+            <div onmouseover="aparecerTexto();" onmouseout="reset();" id="divtres"></div>
+        </div>
+        <div class="box">
+            <div onmouseover="aparecerTexto();" onmouseout="reset();" id="divquatro"></div>
+        </div>
+        <div class="box">
+            <div onmouseover="aparecerTexto();" onmouseout="reset();" id="divcinco"></div>
+        </div>
+        <div class="box">
+            <div onmouseover="aparecerTexto();" onmouseout="reset();" id="divseis"></div>
+        </div>
+    </section>
     <section></section>
 
     <footer>
@@ -152,26 +172,25 @@
                     <h3>Colaboradores</h3>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">FIAP</a>
+                    <a href="https://www.fiap.com.br" target="_blank" class="footer-link">FIAP</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">REDE OCEANO LIMPO</a>
+                    <a href="https://redeoceanolimpo.org" target="_blank" class="footer-link">REDE OCEANO LIMPO</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">020 OCEANS</a>
+                    <a href="https://www.g20.org/pt-br" target="_blank" class="footer-link">020 OCEANS</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Softtek</a>
+                    <a href="https://www.softtek.com" target="_blank" class="footer-link">Softtek</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Cátedra UNESCO para a Sustentabilidade do Oceano</a>
-                </li>
-
-                <li>
-                    <a href="#" class="footer-link">Pacto Global Rede Brasil</a>
+                    <a href="https://oceano.iea.usp.br" target="_blank" class="footer-link">Cátedra UNESCO para a Sustentabilidade do Oceano</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Select Soluções</a>
+                    <a href="https://www.pactoglobal.org.br" target="_blank" class="footer-link">Pacto Global Rede Brasil</a>
+                </li>
+                <li>
+                    <a href="https://www.selectsolucoes.com.br" target="_blank" class="footer-link">Select Soluções</a>
                 </li>
             </ul>
             <div id="footer_news">
@@ -191,7 +210,7 @@
             2024 Todos os Direitos Reservados
         </div>
     </footer>
-
+    <script src="script.js"></script>
     <script>
         // MENU DROPDOWN
         const toggleBtn = document.querySelector('.toggle_btn')

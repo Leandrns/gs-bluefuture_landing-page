@@ -155,7 +155,7 @@ section {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 2100px;
     margin: 0 auto;
     padding: 0 5%;
 }
@@ -426,6 +426,112 @@ section {
         font-size: 4vw;
     }
 }
+
+/*Section5*/
+.secao5{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.secao5 div{
+    flex: 1 1 33.333%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 4vw;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 2.8vw;
+}
+
+#divum {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    background-color:#05b2dc;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+}
+
+#divdois {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    background-color:#05b2dc;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+}
+
+#divtres {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    background-color:#05b2dc;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+}
+
+#divquatro {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    background-color:#05b2dc;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+}
+
+#divcinco {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    background-color:#05b2dc;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+}
+
+#divseis {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    background-color:#05b2dc;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+}
+
 
 /* FOOTER */
 footer {
