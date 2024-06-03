@@ -18,7 +18,27 @@ body {
     background-size: cover;
     background-position: center;
     backdrop-filter: brightness(65%);
+    /*cursor: url(images/image.png), pointer;*/
 }
+
+::-webkit-scrollbar{
+    background-color:#a1d2df;
+    width: 2vh;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:#000f3b;
+    border: #028eb1 solid 1.5px;
+    
+}
+
+/*.custom-cursor-area {
+    cursor: url('images/image.png'), auto;
+    height: 6px;
+    width: 6px;
+    border: 2px solid #000;
+    text-align: center;
+}*/
 
 li {
     list-style: none;
