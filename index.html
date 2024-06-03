@@ -20,16 +20,17 @@
     <header>
         <nav>
             <div class="logo">
-                <a href=""><img src="images/logo_seaconnect.svg" alt="Logo SeaConnection"></a>
+                <a href=""><img class="logosea" src="images/logo_seaconnect.svg" alt="Logo SeaConnect"></a>
+                <ul class="sections">
+                    <li><a class="item_section" href="">Seção 1</a></li>
+                    <li><a class="item_section" href="">Seção 2</a></li>
+                    <li><a class="item_section" href="">Seção 3</a></li>
+                    <li><a class="item_section" href="">Seção 4</a></li>
+                    <li><a class="item_section" href="">Seção 5</a></li>
+                    <li><a class="item_section" href="">Seção 6</a></li>
+                </ul>
             </div>
-            <ul class="sections">
-                <li><a class="item_section" href="">Seção 1</a></li>
-                <li><a class="item_section" href="">Seção 2</a></li>
-                <li><a class="item_section" href="">Seção 3</a></li>
-                <li><a class="item_section" href="">Seção 4</a></li>
-                <li><a class="item_section" href="">Seção 5</a></li>
-                <li><a class="item_section" href="">Seção 6</a></li>
-            </ul>
+
             <a href="#" class="action_btn">Salve os Oceanos</a>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
@@ -42,7 +43,7 @@
             <li><a class="item_section" href="">Seção 4</a></li>
             <li><a class="item_section" href="">Seção 5</a></li>
             <li><a class="item_section" href="">Seção 6</a></li>
-            <a href="#" class="action_btn">Salve os Oceanos</a>
+            <a href="pages/cadastro.html" class="action_btn">Salve os Oceanos</a>
         </div>
     </header>
 
@@ -50,14 +51,13 @@
         <div class="container">
             <div class="texto">
                 <h3 class="titulo_secao">O que vamos resolver?</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus officiis, similique explicabo
-                    obcaecati dolore at iste nostrum minus necessitatibus aliquam?</p>
+                <p>Sentimos que a população e as empresas devem se conectar a favor da saúde dos oceanos...</p>
 
-                <button class="saiba_mais"><a href="#">Saiba mais</a></button>
+                <button class="saiba_mais"><a
+                        href="https://www.marinha.mil.br/combate-ao-lixo-no-mar"
+                        target="_blank">Saiba mais</a></button>
             </div>
-            <div class="imagem_secao">
-                <img src="images/img_secao1.jpg" alt="imagemgolfinho">
-            </div>
+            <img src="images/poluicao-marinha.png" alt="Poluição dos mares">
         </div>
     </section>
 
@@ -132,6 +132,23 @@
         </div>
     </section>
     <section></section>
+    <section class="secao4" id="secao4">
+        <div class="conteudo4">
+            <div class="texto">
+                <h2>Público Alvo</h2>
+                <p class="texto4">Nossa meta é atingir a população que ocupa a faixa litorânea do Brasil, que depende direta
+                ou indiretamente dos oceanos, principalmente os jovens-adultos: os mais engajados à mudança</p>
+            </div>
+            <div class="grafico_map">
+                <img src="images/mapa-com_fundo.png" alt="Mapa da população litorânea">
+                <p class="fonte">Fonte: Censo 2022 IBGE</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="secao5" id="secao5"></section>
+    <section class="secao6" id="secao6"></section>
 
     <footer>
         <div id="footer_content">
@@ -210,43 +227,8 @@
             2024 Todos os Direitos Reservados
         </div>
     </footer>
+
     <script src="script.js"></script>
-    <script>
-        // MENU DROPDOWN
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const menuDropDown = document.querySelector('.menu_dropdown')
-
-        toggleBtn.onclick = function () {
-            menuDropDown.classList.toggle('open')
-
-            const isOpen = menuDropDown.classList.contains('open')
-            toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
-        }
-
-        // CARROSSEL DE IMAGENS
-        let currentIndex = 0;
-        const items = document.querySelectorAll('.carrosel-item');
-        const totalItems = items.length;
-
-        function showSlide(index) {
-            items.forEach((item, i) => {
-                item.style.opacity = i === index ? '1' : '0';
-            });
-        }
-
-        document.querySelector('.prev').addEventListener('click', () => {
-            currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
-            showSlide(currentIndex);
-        });
-
-        document.querySelector('.next').addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % totalItems;
-            showSlide(currentIndex);
-        });
-
-        showSlide(currentIndex);
-    </script>
 </body>
 
 </html>
