@@ -177,15 +177,12 @@ section {
     padding: 40px 0;
 }
 
-.container {
-    margin: 0 auto;
-    padding: 0 5%;
-}
-
 .secao1 .container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 auto;
+    padding: 0 5%;
 }
 
 .secao1 .texto {
@@ -193,7 +190,7 @@ section {
 }
 
 .secao1 .texto h3 {
-    font-size: 6.5vw;
+    font-size: 6vw;
 }
 
 .secao1 .texto p {
@@ -201,9 +198,9 @@ section {
     font-size: 3vw;
 }
 
-.secao1 .imagem_secao img {
+.secao1 img {
     width: 45vw;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .saiba_mais {
@@ -211,8 +208,6 @@ section {
     width: 100px;
     height: 40px;
     border-radius: 30px;
-    align-items: center;
-    justify-content: center;
     margin: 20px 0 10px 0;
     transition: all .2s;
 }
@@ -245,7 +240,7 @@ section {
 }
 
 @media (max-width: 768px) {
-    .secao1 .imagem_secao img {
+    .secao1 img {
         width: 60vw;
     }
 
@@ -450,18 +445,20 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
     width: 100%;
+}
+
+.secao4 .texto {
+    width: 80%;
 }
 
 .secao4 h2 {
     font-size: 4vw;
-    text-align: center;
 }
 
 .secao4 .texto4 {
     font-size: 2.8vw;
-    width: 80%;
 }
 
 .secao4 .conteudo4 {
@@ -469,6 +466,10 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.grafico_map {
+    text-align: center;
 }
 
 .grafico_map img {
@@ -485,6 +486,7 @@ section {
 @media(max-width:768px) {
     .secao4 .conteudo4 {
         flex-direction: column;
+        text-align: center;
     }
 
     .grafico_map img {
