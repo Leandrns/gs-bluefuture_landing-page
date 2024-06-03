@@ -62,18 +62,18 @@
     </section>
 
     <section class="secao2" id="secao2">
-        <h2>Seção 2</h2>
+        <h2>As tecnologia que pretendemos utilizar</h2>
         <div class="conteudo">
             <div class="slide">
                 <div id="item-1" class="carrosel-item item-1"></div>
                 <div id="item-2" class="carrosel-item item-2"></div>
                 <div id="item-3" class="carrosel-item item-3"></div>
 
-                <a class="prev arrow"></a>
-                <a class="next arrow"></a>
+                <a id="prev" class="prev arrow"></a>
+                <a id="next" class="next arrow"></a>
             </div>
             <div class="texto_2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cumque culpa, harum voluptatibus
+                <p id="carrosel-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cumque culpa, harum voluptatibus
                     quam reprehenderit libero perspiciatis sint repellat? Error!</p>
             </div>
         </div>
@@ -109,28 +109,7 @@
     </section>
 
     <section></section>
-    <h2 class="titulo">Quais os benefícios?</h2>
-    <h4 class="subtitulo">Passe o mouse ou clique na imagem!</h4>
-    <section class="secao5">
-        <div class="box">
-            <div onmouseover="aparecerTexto();" onmouseout="reset();" id="divum"></div>
-        </div>
-        <div class="box">
-            <div onmouseover="aparecerTexto();" onmouseout="reset();" id="divdois"></div>
-        </div>
-        <div class="box">
-            <div onmouseover="aparecerTexto();" onmouseout="reset();" id="divtres"></div>
-        </div>
-        <div class="box">
-            <div onmouseover="aparecerTexto();" onmouseout="reset();" id="divquatro"></div>
-        </div>
-        <div class="box">
-            <div onmouseover="aparecerTexto();" onmouseout="reset();" id="divcinco"></div>
-        </div>
-        <div class="box">
-            <div onmouseover="aparecerTexto();" onmouseout="reset();" id="divseis"></div>
-        </div>
-    </section>
+
     <section></section>
     <section class="secao4" id="secao4">
         <div class="conteudo4">
@@ -144,10 +123,31 @@
                 <p class="fonte">Fonte: Censo 2022 IBGE</p>
             </div>
         </div>
-
     </section>
 
-    <section class="secao5" id="secao5"></section>
+        <h2 class="titulo">Quais os benefícios?</h2>
+        <h4 class="subtitulo">Passe o mouse ou clique na imagem!</h4>
+        <section class="secao5">
+            <div class="box">
+                <div onmouseover="aparecerTexto1();" onmouseout="reset1();" id="divum"><img src="images/socializar.png" alt="Socializando com pessoas sobre o mesmo assunto"></div>
+            </div>
+            <div class="box">
+                <div onmouseover="aparecerTexto2();" onmouseout="reset2();" id="divdois"><img src="images/limpando_praia.png" alt="Criança ajudando na limpeza da praia"></div>
+            </div>
+            <div class="box">
+                <div onmouseover="aparecerTexto3();" onmouseout="reset3();" id="divtres"><img src="images/cleanup.png" alt="Empresa que trabalha em ajudar o mar"></div>
+            </div>
+            <div class="box">
+                <div onmouseover="aparecerTexto4();" onmouseout="reset4();" id="divquatro"><img src="images/dados.png" alt="Dados vindos da Boia SeaConnect"></div>
+            </div>
+            <div class="box">
+                <div onmouseover="aparecerTexto5();" onmouseout="reset5();" id="divcinco"><img src="images/comunidade.png" alt="Se unir a outras pessoas da plataforma"></div>
+            </div>
+            <div class="box">
+                <div onmouseover="aparecerTexto6();" onmouseout="reset6();" id="divseis"><img src="images/visibilidade.png" alt="Ganhe visibilidade através do sistema de ranking"></div>
+            </div>
+        </section>
+    
     <section class="secao6" id="secao6"></section>
 
     <footer>
@@ -227,8 +227,7 @@
             2024 Todos os Direitos Reservados
         </div>
     </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>
