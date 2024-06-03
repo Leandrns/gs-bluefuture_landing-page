@@ -73,7 +73,13 @@ nav {
 }
 
 nav .logo {
-    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo .logosea {
+    margin-right: 50px;
 }
 
 nav .logo_seaconnection {
@@ -124,7 +130,7 @@ nav .toggle_btn {
 }
 
 /* RESPONSIVIDADE */
-@media(max-width: 1026px) {
+@media(max-width: 1150px) {
 
     nav .sections,
     nav .action_btn {
@@ -155,7 +161,6 @@ section {
 }
 
 .container {
-    max-width: 1400px;
     margin: 0 auto;
     padding: 0 5%;
 }
