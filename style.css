@@ -18,6 +18,7 @@ body {
     background-size: cover;
     background-position: center;
     backdrop-filter: brightness(65%);
+    
     /*cursor: url(images/image.png), pointer;*/
 }
 
@@ -406,8 +407,8 @@ section {
 .secao3 .card-item img {
     border-radius: 10%;
     border: #028eb1 solid 2px;
-    width: 100px;
-    height: 100px;
+    width: 100%px;
+    height: 150px;
     display: block;
     margin: 10px auto;
 }
