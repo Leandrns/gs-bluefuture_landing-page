@@ -14,10 +14,16 @@ toggleBtn.onclick = function () {
 let currentIndex = 0;
 const items = document.querySelectorAll('.carrosel-item');
 const totalItems = items.length;
+const textos = [
+    "Texto A",
+    "Texto B",
+    "Texto C"
+];
 
 function showSlide(index) {
     items.forEach((item, i) => {
         item.style.opacity = i === index ? '1' : '0';
+        document.querySelector('.texto_2 p').textContent = textos[index];
     });
 }
 

@@ -277,7 +277,7 @@ section {
 }
 
 .slide {
-    width: 130vw;
+    width: 450px;
     height: 25vw;
     position: relative;
     margin-left: 5%;
@@ -290,7 +290,7 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 450px;
     height: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
