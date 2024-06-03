@@ -282,7 +282,7 @@ section {
 
 .slide {
     width: 450px;
-    height: 450px;
+    height: 25vw;
     position: relative;
     margin-left: 5%;
     border-radius: 20px;
@@ -295,7 +295,7 @@ section {
     top: 0;
     left: 0;
     width: 450px;
-    height: 450px;
+    height: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     background-size: cover;
@@ -390,11 +390,6 @@ section {
     text-align: center;
 }
 
-.secao3 p {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
 .cards {
     display: flex;
     justify-content: center;
@@ -405,29 +400,31 @@ section {
 
 .secao3 .card-item {
     background-color: #b9b9b97e;
-    margin: 15px;
+    margin: 50px;
     border-radius: 15px;
     text-align: center;
-    width: 250px;
+    width: 320px;
+    padding: 20px 5px 20px 10px;
     transition: all .3s;
 }
 
 .secao3 .card-item img {
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
+    border-radius: 10%;
+    border: hsl(192, 98%, 35%) solid 2px;
+    width: 180px;
+    height: 150px;
     display: block;
     margin: 10px auto;
 }
 
 .secao3 .card-item .titulo_card {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 15px;
 }
 
 .secao3 .card-item .descricao {
-    font-size: 15px;
+    font-size: 20px;
     padding: 0 15px;
 }
 
@@ -615,6 +612,121 @@ section {
     justify-content: center;
     font-size: 30px;
     align-items: center;
+}
+.secao6 {
+    background-color: #0262b1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+}
+
+.secao6 h2 {
+    font-size: 4vw;
+    text-align: center;
+    color: white;
+}
+
+.secao6 .titulo_card6{
+    font-size: 4vh;
+}
+
+.secao6 .texto6{
+    font-size: 1.5vw;
+}
+
+.conteudo6 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.conteudo-wrapper {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.foto_praia {
+    width: 45%; 
+    display: flex;
+    justify-content: center; 
+}
+
+.foto_praia img {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 0 #000;
+}
+
+.cards6 {
+    width: 45%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.cards6 .card-item6 {
+    background-color: #b9b9b97e;
+    margin: 15px 0 0 15px;
+    border-radius: 15px;
+    border: #000f3b solid 2px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cards6 .card-item6:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.cards6 .card-item6 .titulo_card {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .secao6 .conteudo6 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secao6 h2 {
+        font-size: 8vw;
+    }
+    .secao6 .texto6{
+        font-size: 3vw;
+    }
+
+    .secao6 .titulo_card6{
+        font-size: 4vw;
+    }
+
+    .cards6 {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .cards6 .card-item6 {
+        width: 100%;
+    }
+
+    .foto_praia img {
+        width: 100%;
+        margin-top: 25px;
+    }
 }
 
 
