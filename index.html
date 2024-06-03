@@ -43,7 +43,7 @@
             <li><a class="item_section" href="">Seção 4</a></li>
             <li><a class="item_section" href="">Seção 5</a></li>
             <li><a class="item_section" href="">Seção 6</a></li>
-            <a href="#" class="action_btn">Salve os Oceanos</a>
+            <a href="pages/cadastro.html" class="action_btn">Salve os Oceanos</a>
         </div>
     </header>
 
@@ -54,9 +54,8 @@
                 <p>Sentimos que a população e as empresas devem se conectar a favor da saúde dos oceanos...</p>
 
                 <button class="saiba_mais"><a
-                        href="https://www.nationalgeographicbrasil.com/meio-ambiente/2023/06/oceanos-abrigam-mais-de-2-milhoes-de-toneladas-de-plastico"
-                        target="_blank">Saiba
-                        mais</a></button>
+                        href="https://www.marinha.mil.br/combate-ao-lixo-no-mar"
+                        target="_blank">Saiba mais</a></button>
             </div>
             <img src="images/poluicao-marinha.png" alt="Poluição dos mares">
         </div>
@@ -206,42 +205,7 @@
         </div>
     </footer>
 
-    <script>
-        // MENU DROPDOWN
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const menuDropDown = document.querySelector('.menu_dropdown')
-
-        toggleBtn.onclick = function () {
-            menuDropDown.classList.toggle('open')
-
-            const isOpen = menuDropDown.classList.contains('open')
-            toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
-        }
-
-        // CARROSSEL DE IMAGENS
-        let currentIndex = 0;
-        const items = document.querySelectorAll('.carrosel-item');
-        const totalItems = items.length;
-
-        function showSlide(index) {
-            items.forEach((item, i) => {
-                item.style.opacity = i === index ? '1' : '0';
-            });
-        }
-
-        document.querySelector('.prev').addEventListener('click', () => {
-            currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
-            showSlide(currentIndex);
-        });
-
-        document.querySelector('.next').addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % totalItems;
-            showSlide(currentIndex);
-        });
-
-        showSlide(currentIndex);
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

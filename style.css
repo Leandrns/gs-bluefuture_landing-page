@@ -453,7 +453,7 @@ section {
 }
 
 .secao4 .texto {
-    width: 80%;
+    width: 100%;
 }
 
 .secao4 h2 {
@@ -472,11 +472,12 @@ section {
 }
 
 .grafico_map {
+    width: 60%;
     text-align: center;
 }
 
 .grafico_map img {
-    width: 60%;
+    width: 95%;
     border-radius: 10px;
     margin: 15px;
     box-shadow: 0 0 15px 0 #000;
