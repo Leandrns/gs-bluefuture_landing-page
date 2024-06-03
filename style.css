@@ -522,6 +522,10 @@ section {
     color: white;
 }
 
+.secao6 .texto6{
+    font-size: 1.5vw;
+}
+
 .conteudo6 {
     display: flex;
     justify-content: center;
