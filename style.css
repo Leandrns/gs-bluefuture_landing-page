@@ -18,8 +18,7 @@ body {
     background-size: cover;
     background-position: center;
     backdrop-filter: brightness(65%);
-    
-    /*cursor: url(images/image.png), pointer;*/
+    width: 100%;
 }
 
 ::-webkit-scrollbar{
@@ -30,7 +29,6 @@ body {
 ::-webkit-scrollbar-thumb{
     background-color:#000f3b;
     border: #028eb1 solid 1.5px;
-    
 }
 
 /*.custom-cursor-area {
@@ -178,6 +176,12 @@ section {
     padding: 40px 0;
 }
 
+.container {
+    max-width: 2100px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
 .secao1 .container {
     display: flex;
     flex-direction: row;
@@ -206,11 +210,12 @@ section {
 
 .saiba_mais {
     background-color: midnightblue;
-    width: 100px;
-    height: 40px;
+    width: 240px;
+    height: 90px;
     border-radius: 30px;
     margin: 20px 0 10px 0;
     transition: all .2s;
+    font-size: 22px;
 }
 
 .saiba_mais:hover {
@@ -262,6 +267,7 @@ section {
     align-items: center;
     text-align: center;
     z-index: 1;
+    
 }
 
 .secao2 h2 {
@@ -273,7 +279,6 @@ section {
     justify-content: space-between;
     align-items: center;
     display: flex;
-    width: 100%;
     flex-wrap: wrap;
 }
 
@@ -333,7 +338,7 @@ section {
 }
 
 .item-1 {
-    background-image: url("images/img_slide1.jpg");
+    background-image: url("images/img_slide1.png");
 }
 
 .item-2 {
@@ -341,18 +346,18 @@ section {
 }
 
 .item-3 {
-    background-image: url("images/img_slide3.jpg");
+    background-image: url("images/img_slide3.png");
 }
 
 .texto_2 {
-    padding: 20px;
+    padding: 100px;
     box-sizing: border-box;
     font-size: 2vw;
     justify-content: center;
     align-items: center;
     display: flex;
     width: 500px;
-    margin-right: 200px;
+    
 }
 
 @media (max-width: 1200px) {
@@ -384,7 +389,7 @@ section {
         height: 40vw;
         margin-left: 0;
     }
-    
+
     .texto_2 {
         padding: 20px;
     }
@@ -475,7 +480,7 @@ section {
 }
 
 .secao4 .texto {
-    width: 80%;
+    width: 100%;
 }
 
 .secao4 h2 {
@@ -494,11 +499,12 @@ section {
 }
 
 .grafico_map {
+    width: 60%;
     text-align: center;
 }
 
 .grafico_map img {
-    width: 60%;
+    width: 95%;
     border-radius: 10px;
     margin: 15px;
     box-shadow: 0 0 15px 0 #000;
@@ -515,7 +521,7 @@ section {
     }
 
     .grafico_map img {
-        width: 55%;
+        width: 80%;
         margin-top: 25px;
     }
 
@@ -528,10 +534,112 @@ section {
     }
 }
 
-/* Section5 */
+/*Section5*/
+.secao5{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
 
+.secao5 div{
+    flex: 1 1 33.333%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px;
+    transition: all 2s ease-out;
+}
 
-/* Section6 */
+.box img{
+    width: 100%;
+    height: 100%;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 4vw;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 2.8vw;
+}
+
+#divum {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    background-color:#05b2dc;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+
+}
+
+#divdois {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    background-color:#05b2dc;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+}
+
+#divtres {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    background-color:#05b2dc;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+}
+
+#divquatro {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    background-color:#05b2dc;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+}
+
+#divcinco {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    background-color:#05b2dc;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+}
+
+#divseis {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    background-color:#05b2dc;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+}
+
+/*Section6*/
 .secao6 {
     background-color: #0262b1;
     display: flex;
