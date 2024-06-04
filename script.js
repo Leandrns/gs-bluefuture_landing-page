@@ -16,11 +16,11 @@ function aparecerTexto5() {
     document.getElementById("divcinco").innerHTML = "A união faz a força, se junte a uma de nossas comunidades e faça parte da solução você também!";
 }    
 function aparecerTexto6() {
-    document.getElementById("divseis").innerHTML = "Oque a as pessoas que usam redes sociais e empresas querem? É visibilidade, e caso ajude o oceano é isso que terá.";
+    document.getElementById("divseis").innerHTML = "O que a as pessoas que usam redes sociais e empresas querem? É visibilidade, e caso ajude o oceano é isso que terá.";
 }
 
 function reset1() {
-    document.getElementById("divum").innerHTML = '<img src="images/socializar.png" alt="Socializando com pessoas sobre o mesmo assunto">';
+    document.getElementById("divum").innerHTML = '<img src="images/Socializar.png" alt="Socializando com pessoas sobre o mesmo assunto">';
 }
 function reset2() {
     document.getElementById("divdois").innerHTML = '<img src="images/limpando_praia.png" alt="Criança ajudando na limpeza da praia">';
