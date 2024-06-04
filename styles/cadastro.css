@@ -68,6 +68,12 @@ body {
     border-radius: 5px;
     padding: 8px;
     border: 2px solid #c7c7c7;
+    transition: all .3s ease-out;
+}
+
+.form-content input:focus {
+    scale: 1.02;
+    background-color: #eeeeee;
 }
 
 .form-content a {
@@ -87,6 +93,13 @@ body {
     font-size: 16px;
     cursor: pointer;
     margin-top: 15px;
+    transition: all .3s ease-out;
+}
+
+.form button:hover {
+    scale: 1.02;
+    background-color: #c7c7c7;
+    color: #000;
 }
 
 .form-content.error input {
