@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if(targetSection) {
             setTimeout(function() {
                 targetSection.scrollIntoView({ behavior: 'smooth' });
-            }, 1000);
+            }, 500);
         }
     };
 

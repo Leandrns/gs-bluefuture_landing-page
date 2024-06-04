@@ -279,12 +279,13 @@ section {
     justify-content: space-between;
     align-items: center;
     display: flex;
-    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .slide {
     width: 450px;
-    height: 25vw;
+    height: 300px;
     position: relative;
     margin-left: 40px;
     border-radius: 20px;
@@ -296,7 +297,7 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    width: 450px;
+    width: 100%;
     height: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -356,7 +357,8 @@ section {
     justify-content: center;
     align-items: center;
     display: flex;
-    
+    width: 600px;
+    height: 100%;
 }
 
 #carrosel-text{
@@ -371,6 +373,7 @@ section {
     .slide {
         justify-content: center;
         align-items: center;
+        margin-left: 0;
     }
 
     .texto_2 {
@@ -378,6 +381,7 @@ section {
         margin-right: 0;
         font-size: 5vw;
         text-align: center;
+        height: 400px;
     }
 
     
@@ -395,10 +399,6 @@ section {
         margin-left: 0;
     }
 
-    .texto_2 {
-        padding: 20px;
-    }
-
     .secao2 h2 {
         font-size: 8vw;
     }
@@ -406,6 +406,7 @@ section {
     .texto_2 {
         text-align: center;
         font-size: 4vw;
+        height: 300px;
     }
     
 }
@@ -440,10 +441,10 @@ section {
 }
 
 .secao3 .card-item img {
-    border-radius: 10%;
-    border: hsl(192, 98%, 35%) solid 2px;
-    width: 180px;
-    height: 150px;
+    border-radius: 5%;
+    border: #171717 solid 2px;
+    width: 270px;
+    height: 220px;
     display: block;
     margin: 10px auto;
 }
