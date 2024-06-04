@@ -350,14 +350,17 @@ section {
 }
 
 .texto_2 {
-    padding: 100px;
+    padding: 50px;
     box-sizing: border-box;
     font-size: 2vw;
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 500px;
     
+}
+
+#carrosel-text{
+    height: 238px;
 }
 
 @media (max-width: 1200px) {
@@ -376,6 +379,8 @@ section {
         font-size: 5vw;
         text-align: center;
     }
+
+    
 }
 
 
@@ -402,6 +407,7 @@ section {
         text-align: center;
         font-size: 4vw;
     }
+    
 }
 
 /* Section3 */
