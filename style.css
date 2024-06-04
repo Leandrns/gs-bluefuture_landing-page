@@ -270,17 +270,18 @@ section {
 }
 
 .conteudo {
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .slide {
     width: 450px;
     height: 25vw;
     position: relative;
-    margin-left: 5%;
+    margin-left: 40px;
     border-radius: 20px;
     border: solid 2px black;
     overflow: hidden;
@@ -346,9 +347,32 @@ section {
 .texto_2 {
     padding: 20px;
     box-sizing: border-box;
-    text-align: left;
-    font-size: 2.8vw;
+    font-size: 2vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 500px;
+    margin-right: 200px;
 }
+
+@media (max-width: 1200px) {
+    .conteudo {
+        flex-direction: column;
+    }
+
+    .slide {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto_2 {
+        width: 80vw;
+        margin-right: 0;
+        font-size: 5vw;
+        text-align: center;
+    }
+}
+
 
 @media(max-width:768px) {
     .conteudo {

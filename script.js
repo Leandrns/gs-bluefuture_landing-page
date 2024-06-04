@@ -15,9 +15,9 @@ let currentIndex = 0;
 const items = document.querySelectorAll('.carrosel-item');
 const totalItems = items.length;
 const textos = [
-    "Texto A",
-    "Texto B",
-    "Texto C"
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. sdfdvgbdsfdgdsfdgadsfdgadfdvgbsdfdgf",
+    "Lorem ipsum dolor "
 ];
 
 function showSlide(index) {
