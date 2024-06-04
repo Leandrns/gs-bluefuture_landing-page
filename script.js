@@ -57,7 +57,7 @@ const items = document.querySelectorAll('.carrosel-item');
 const totalItems = items.length;
 const textos = [
     "Utilizaremos Python para desenvolver as funcionalidades de nosso app.",
-    "Nossa boia utilizará tecnologias sensoriais como nível de oxigênio dissolvido, pH, temperatura, turbidez, salinidade e quantidade de microplásticos.",
+    "Nossa boia utilizará sensores de nível de oxigênio dissolvido, pH, temperatura, turbidez, salinidade e quantidade de microplásticos.",
     "A boia junto de nosso app, usará tecnologias via nuvem e satélite para mante-los informados da poluição marinha."
 ];
 

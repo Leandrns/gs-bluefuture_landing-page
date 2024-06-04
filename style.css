@@ -351,9 +351,9 @@ section {
 }
 
 .texto_2 {
-    padding: 50px;
+    padding: 0px 0px 10px 30px;
     box-sizing: border-box;
-    font-size: 2vw;
+    font-size: 1.7vw;
     justify-content: center;
     align-items: center;
     display: flex;
