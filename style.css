@@ -210,11 +210,12 @@ section {
 
 .saiba_mais {
     background-color: midnightblue;
-    width: 100px;
-    height: 40px;
+    width: 240px;
+    height: 90px;
     border-radius: 30px;
     margin: 20px 0 10px 0;
     transition: all .2s;
+    font-size: 22px;
 }
 
 .saiba_mais:hover {
@@ -266,6 +267,7 @@ section {
     align-items: center;
     text-align: center;
     z-index: 1;
+    
 }
 
 .secao2 h2 {
@@ -274,17 +276,17 @@ section {
 }
 
 .conteudo {
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .slide {
     width: 450px;
     height: 25vw;
     position: relative;
-    margin-left: 5%;
+    margin-left: 40px;
     border-radius: 20px;
     border: solid 2px black;
     overflow: hidden;
@@ -336,7 +338,7 @@ section {
 }
 
 .item-1 {
-    background-image: url("images/img_slide1.jpg");
+    background-image: url("images/img_slide1.png");
 }
 
 .item-2 {
@@ -344,15 +346,38 @@ section {
 }
 
 .item-3 {
-    background-image: url("images/img_slide3.jpg");
+    background-image: url("images/img_slide3.png");
 }
 
 .texto_2 {
-    padding: 20px;
+    padding: 100px;
     box-sizing: border-box;
-    text-align: left;
-    font-size: 2.8vw;
+    font-size: 2vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 500px;
+    
 }
+
+@media (max-width: 1200px) {
+    .conteudo {
+        flex-direction: column;
+    }
+
+    .slide {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto_2 {
+        width: 80vw;
+        margin-right: 0;
+        font-size: 5vw;
+        text-align: center;
+    }
+}
+
 
 @media(max-width:768px) {
     .conteudo {
@@ -364,7 +389,7 @@ section {
         height: 40vw;
         margin-left: 0;
     }
-    
+
     .texto_2 {
         padding: 20px;
     }
@@ -613,6 +638,8 @@ section {
     font-size: 30px;
     align-items: center;
 }
+
+/*Section6*/
 .secao6 {
     background-color: #0262b1;
     display: flex;
