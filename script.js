@@ -20,7 +20,7 @@ function aparecerTexto6() {
 }
 
 function reset1() {
-    document.getElementById("divum").innerHTML = '<img src="images/socializar.png" alt="Socializando com pessoas sobre o mesmo assunto">';
+    document.getElementById("divum").innerHTML = '<img src="images/Socializar.png" alt="Socializando com pessoas sobre o mesmo assunto">';
 }
 function reset2() {
     document.getElementById("divdois").innerHTML = '<img src="images/limpando_praia.png" alt="Criança ajudando na limpeza da praia">';

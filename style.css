@@ -81,8 +81,6 @@ header {
 }
 
 nav {
-    position: sticky;
-    top: 0;
     width: 100%;
     height: 60px;
     max-width: 1200px;
@@ -602,6 +600,11 @@ section {
 
     .subtitulo {
         font-size: 4vw;
+    }
+
+    .box .caixa {
+        width: 350px;
+        height: 350px;
     }
 }
 
