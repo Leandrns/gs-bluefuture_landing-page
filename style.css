@@ -19,6 +19,9 @@ body {
     background-position: center;
     backdrop-filter: brightness(65%);
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 ::-webkit-scrollbar{
