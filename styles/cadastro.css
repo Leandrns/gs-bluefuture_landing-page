@@ -9,7 +9,6 @@ body {
     background-image: url(../images/background_blue-particles.jpg);
     background-size: cover;
     background-position: center;
-    backdrop-filter: brightness(65%);
     width: 100%;
     height: 100%;
     display: flex;
