@@ -1,4 +1,4 @@
-<h1 align="center">Landing Page do projeto para a Global Solution - Blue Future</h1>
+<h1 align="center">Landing Page - Global Solution - Blue Future</h1>
 <h2 align="center">Entrega de Front-End Design + Web Development</h2>
 <div align="center">
   <img src="https://github.com/Leandrns/gs-bluefuture_landing-page/assets/162998083/0a043c1c-d6d2-4fed-866b-eeda5cd7a7b2">
