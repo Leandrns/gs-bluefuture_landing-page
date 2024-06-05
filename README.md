@@ -6,4 +6,5 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 ## Descrição do Projeto
-Essa Landing Page é dedicada à apresentar a solução que desenvolvemos para o tema da Global Solution: nossa avaliação semestral na FIAP. O tema dessa GS é os oceanos e sua preservação. Para isso, idealizamos o Sea Connect, um app onde os usuários podem visualizar dados sobre a saúde das águas do mar e se conectar com outras pessoas e até com empresas, com o objetivo de engajar a sociedade para o cuidado dos oceanos. Confira mais detalhes acessando a página nesse link: 
+Essa Landing Page é dedicada à apresentar a solução que desenvolvemos para o tema da Global Solution: nossa avaliação semestral na FIAP. O tema dessa GS é os oceanos e sua preservação. Para isso, idealizamos o Sea Connect, um app onde os usuários podem visualizar dados sobre a saúde das águas do mar e se conectar com outras pessoas e até com empresas, com o objetivo de engajar a sociedade para o cuidado dos oceanos. <br>
+Confira mais detalhes acessando a página nesse link: https://leandrns.github.io/gs-bluefuture_landing-page/
