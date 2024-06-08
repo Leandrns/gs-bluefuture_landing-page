@@ -4,6 +4,12 @@
   <img src="https://github.com/Leandrns/gs-bluefuture_landing-page/assets/162998083/0a043c1c-d6d2-4fed-866b-eeda5cd7a7b2">
 </div>
 
+### Engenharia de Software - FIAP - 1ESA
+### Integrantes
+Caio Alexandre dos Santos  RM: 558460<br>
+Leandro do Nascimento Souza  RM: 558893<br>
+Rafael de Mônaco Maniezo  RM: 556079
+
 ### Tecnologias
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
